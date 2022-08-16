@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+    <link href="css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+   
+    
+    <!-- <link rel="stylesheet" href="css/jquery.simpleTicker.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.simpleTicker.js"></script>
+   
+    
+    <style>
+        @font-face {
+        font-family:sahel-bold;
+        src: url(fonts/sahel-bold);
+        src:url(fonts/sahel-bold.woff) format('truetype');
+      }
+    </style>
+  </head>
+  <body class="m-0">
+    <!-- right-menubar -->
+    <div class="sm-device-menu  position-fixed position-relative sidebar">
+      <div class="text-center bg-dark position-relative admin-section ">
+        <p class="text-white  pt-4">خوش امدید</p>
+        <img src="photos/admin.png" class="rounded-circle position-absolute " width="45" height="45">
+      </div> 
+      <ul class="list-group sm-device-menu-items mt-4">
+       <li class="list-group-item ">
+         <a href="#" class="text-white "> <i class="material-icons">comment</i>نظرات</a>
+       </li>
+       <li class="list-group-item mt-1">
+        <a href="#" class="text-white "> <i class="material-icons">border_color</i>ارسال مطالب</a>
+      </li>
+      <li class="list-group-item mt-1">
+        <a href="#" class="text-white "> <i class="material-icons">comment</i>پروفایل</a>
+      </li>
+      <li class="list-group-item mt-1">
+        <a href="#" class="text-white ">
+          <i class="material-icons">dashboard</i>پنل مدیریت</a>
+      </li>
+      </ul>
+      <div class="btn-toggle position-absolute rounded-left">
+         <i class=" icon material-icons text-white">chevron_left</i>
+      </div>
+    </div> 
+    
+    <!-- menu-bar -->
+<div class="col-sm-12 col-lg-12 col-xl-12 p-0   sticky-top ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+    <a class="navbar-brand mr-4" href="#" >
+      <img src="photos/web-de.png" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+      aria-expanded="false" aria-label="Toggle navigation" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbar">
+         <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
+            </li><i class="material-icons"  style=" color: rgb(203, 197, 238)">more_vert</i>
+            <li class="nav-item" >
+              <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button"  data-toggle="dropdown"  aria-haspopup="true"
+            aria-expanded="false">
+            دوره های آموزشی
+              </a>
+              <div class="dropdown-menu py-0" id="custom-dropdown-menu">
+                 <div class="container-fluid px-0 py-0 ">
+                   <div class="row  custom-row justify-content-center ">
+                      <div class="col-12  col-md-4 div-color ">
+                        <div class="alert  alert-light">
+                          <p class=" text-center ">دوره های جدید</p>
+                        </div>
+                        <span class="title-one"><i class="material-icons clock pr-3">&#xe8ae;</i>همه دوره ها</span>
+                        <ul class="list-group " id="custom-list-group-1">
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color"> <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت 5</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش جاوا اسکریپت قسمت 1</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش  جی کوئری قسمت 15</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت  6</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش css قسمت 5</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت 22</li></a>
+                        </ul>
+                      </div>
+                     <div class="col-12 col-md-4 col-lg-4 div-color ">
+                       <div class="alert  alert-light">
+                        <p class="text-center">طراحی وب سمت سرور</p> 
+                        </div>
+                        <span class="title-one"><i class="material-icons clock pr-3">&#xe8ae;</i>همه دوره ها</span>
+                        <ul class="list-group" id="custom-list-group-1">
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color "> <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت 5</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش جاوا اسکریپت قسمت 1</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش  جی کوئری قسمت 15</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت  6</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش css قسمت 5</li></a>
+                          <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت 22</li></a>
+                        </ul>
+                     </div>
+                     <div class="col-12  col-md-4 ">
+                        <div class="alert alert-light">
+                          <p class="text-center" >جدیدترین دوره های آموزشی</p>
+                         </div>
+                         <span class="title-one"><i class="material-icons clock pr-3">&#xe8ae;</i>همه دوره ها</span>
+                     <ul class="list-group" id="custom-list-group-1">
+                      <a href="#" class="custom-link"><li class="list-group-item border-0 div-color"> <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت 5</li></a>
+                      <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش جاوا اسکریپت قسمت 1</li></a>
+                      <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش  جی کوئری قسمت 15</li></a>
+                      <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت  6</li></a>
+                      <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش css قسمت 5</li></a>
+                      <a href="#" class="custom-link"><li class="list-group-item border-0 div-color">  <i class="fas fa-angle-left pl-1"></i>اموزش بوت استرپ قسمت 22</li></a>
+                     </ul>
+                    </div>
+                </div>
+               </div>
+            </li>
+            <i class="material-icons" style=" color: rgb(203, 197, 238)">more_vert</i>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تماس با ما</a>
+            </li>
+            <i class="material-icons"  style=" color: rgb(203, 197, 238)">more_vert</i>
+            <li class="nav-item">
+               <a class="nav-link" href="#">ارتباط با ما</a>
+            </li>
+         </ul>
+      
+      <!-- left part menu -->
+      <div class="mr-auto">
+        <ul class="navbar-nav">
+           <!-- setting -->
+           <li class="nav-item dropdown mr-auto">
+               <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button"  data-toggle="dropdown"  aria-haspopup="true"
+                 aria-expanded="false" style="vertical-align: -13px;">
+                  <img class="setting-icon pt-2" src="photos/setting.png">
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"> <img class="admin-icon ml-1" src="photos/comment.png"> نظرات</a>
+                  <a class="dropdown-item" href="#"> <img  class="admin-icon ml-1" src="photos/drive.png">ارسال مطلب</a>
+                  <a class="dropdown-item" href="#"> <img  class=" admin-iconml-1"src="photos/person.png">پروفایل کاربری</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><img class=" admin-icon ml-1" src="photos/manage.png">پنل مدیریت</a>
+               </div>
+          </li>
+          <li class="nav-item dropdown mr-auto">
+             <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button"  data-toggle="dropdown"  aria-haspopup="true"
+          aria-expanded="false">
+                <img class="menu-avatar rounded-circle border-2" src="photos/admin.png"><span class="mr-1">پروفایل</span>
+             </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="#">پنل مدیریت</a>
+             <a class="dropdown-item" href="#">دوره های شما</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">ارسال تیکت</a>
+           </div>
+         </li>
+        </ul>
+      </div>
+     </div>
+  </nav>
+   </div>
+    <div class="container-fluid" id="custom-container-fluid">
+      <div class="cover-header"></div>
+      <!-- top-header -->
+      <div class="container-fluid" id="custom-top-menu-container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 col-xl-6">
+            <div class="top-header border-1">کدهای جاوا اسکریپت</div>
+          </div>
+          <div class="col-sm-12 col-lg-6 col-xl-6">
+            <div class="social-icon ml-4">
+              <img class="social-media" src="photos/instagram.png" />
+              <img class="social-media" src="photos/telegram.png" />
+              <img class="social-media" src="photos/google.png" />
+              <img class="social-media" src="photos/facebook.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+         <!-- hero-header -->
+        <div class="container ">
+          <div class="row justify-content-center ">
+            <div class="col-10 text-center d-none d-sm-none d-md-none d-lg-block ">
+              <p class="hero-header-title mt-5 ">همگام با ما در جهت ورود به عرصه توسعه وب</p>
+              <p class="hero-header-title mt-2" >وب دیزاین برگزارکننده دوره های تضمینی مبتنی بر طراحی وب</p>
+            </div>
+           <!-- search form -->
+           <div class="col-10 ">
+             <form class="rtl mt-4" >
+                <div class="input-group text-center">
+                  <input class="form-control " type="text" placeholder="عبارت مورد نظر را جستجو کنید">
+                    <div class="input-group-prepend">
+                      <input  type="submit" class="btn btn-info" value="جستجو">
+                    </div>
+                </div>
+             </form>
+           </div>
+          <!-- end of search form -->
+          <!-- login rigestration section -->
+
+        <div class="col-10 text-center mt-5 ">
+          <a href="#" class=" btn-login  ">
+            <span class="btn-login-icon"> 
+              <i  class="material-icons material-icons-done">done</i>
+             </span>
+            <span class=""> ورود به سایت</span>
+          </a>
+          <a href="#" class="btn-register mr-5">
+                <span class="btn-register-icon">
+                   <i class="material-icons material-icons-register">person_add</i> 
+                </span>
+                <span class="">ثبت نام در سایت</span>
+          </a>
+         </div>
+             <!-- meta-section -->
+         <div class="col-10 text-center mt-5 d-none d-lg-block " id="meta-section">
+           <span>
+              <span>
+                <i class="material-icons mr-4 " style="vertical-align:middle;">supervisor_account</i>
+              </span>
+              <span class="icon-titr">500نفر دانشجو</span>
+           </span>
+           <span>
+              <i class="material-icons  mr-4" style="vertical-align:middle;">library_books</i>
+              <span class="icon-titr">1200مقاله</span>
+           </span>
+           <span>
+              <i class="material-icons  mr-4 " style="vertical-align:middle;">school</i>
+              <span class="icon-titr">20 دوره آموزشی</span>
+          </span>
+          <span>
+              <i class="material-icons  mr-4" style="vertical-align:middle;">access_time</i>
+              <span class="icon-titr">1560 دقیقه آموزش</span>
+          </span>
+         </div>
+          
+          
+      </div>
+    </div>
+  </div>
+  <!-- slider section -->
+  <div class="container mt-5">
+    <div class="row ">
+       <!-- information-panel -->
+       <div class="col-12 col-sm-12 col-md-12  col-lg-4 mb-3 pr-0 ">
+         <div class="card bg-warning shadow-sm ">
+           <div class="card-header">
+            <span class="title-first"> <i class="material-icons" style="vertical-align: bottom;
+              color: white;">info</i> اطلاعیه ها</span>
+           </div>
+           <div class="card-body" style="padding: 8px 5px 0px 5px;">
+             <ul class="info-section px-0 py-0">
+               <li class=" mb-1 bg-white rounded ">پیش ثبت نام دوره php
+                <span class=" rounded float-left">27 خرداد 1397</span>
+               </li>
+               <li class=" mb-1 bg-white rounded">دوره مشاوره تجارت الکترونیک
+                  <span class=" rounded float-left">14آذر 1396</span></li>
+               <li class=" mb-1 bg-white rounded">پیش ثبت نام دوره php 
+                 <span class=" rounded float-left">26شهریور 1396</span>
+               </li>
+               <ul class="info-section px-0 py-0">
+                <li class=" mb-1 bg-white rounded ">دوره سئو بهینه سازی سایت
+                 <span class=" rounded float-left">31 تیر1400</span>
+                </li>
+                <li class=" mb-1 bg-white rounded ">دوره دیجیتال مارکتینگ
+                  <span class=" rounded float-left">31 تیر1400</span>
+                 </li>
+                 <li class=" mb-3 bg-white rounded ">دوره آموزشی وردپرسphp
+                  <span class=" rounded float-left">31 تیر1400</span>
+                 </li>
+             </ul>
+
+           </div>
+           
+         </div>
+      </div>
+      <!-- slider -->
+      <div class="col-12 col-sm-12 col-md-12  col-lg-8  px-0 py-0 mt-0 ">
+        <div id="carouselExampleIndicators" class="carousel slide shadow-sm " data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="photos/3.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="photos/4.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="photos/5.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="photos/7.jpg" alt="forth slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main content grid -->
+  <div class="container mt-5 rounded-top" style="background-color:#2ecc71">
+    <div class="row">
+      <div class="col-12 ">
+        <p class="content-section-title text-center text-white m-0 ">عناوین آموزشی</p>
+      </div>
+    </div>
+  </div>
+  <!-- filtering buttons -->
+  <div class="container bg-white rounded-bottom ">
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="btn-group ml-4" >
+          <button  type="button" class="btn btn-outline-success  btn-sm dropdown-toggle" data-toggle="dropdown" >همه مطالب</button>
+            <div class="dropdown-menu custom-drop">
+              <a  class="dropdown-item" href="#">همه مطالب</a>
+              <a  class="dropdown-item" href="#"> دوره های آموزشی</a>
+              <a  class="dropdown-item" href="#">بانک کد</a>
+              <a  class="dropdown-item" href="#">مقالات آموزشی</a>
+            </div>
+        </div>
+     
+      <div class="btn-group  ml-4">
+        <button  type="button" class="btn btn-outline-success  btn-sm dropdown-toggle" data-toggle="dropdown" >موضوعات</button>
+          <div class="dropdown-menu custom-drop">
+            <a  class="dropdown-item" href="#">همه مطالب</a>
+            <a  class="dropdown-item" href="#"> وردپرس</a>
+            <a  class="dropdown-item" href="#">جاوااسکریپت</a>
+            <a  class="dropdown-item" href="#">سئو</a>
+          </div>
+      </div>
+      <div class="btn-group  ml-4">
+        <button  type="button" class="btn btn-outline-success  btn-sm dropdown-toggle" data-toggle="dropdown" >ترتیب نمایش</button>
+          <div class="dropdown-menu custom-drop">
+            <a  class="dropdown-item" href="#">جدیدترین</a>
+            <a  class="dropdown-item" href="#"> محبوب ترین</a>
+            <a  class="dropdown-item" href="#">داغ ترین</a>
+            
+          </div>
+      </div>
+      <button class="btn btn-info btn-sm float-left btn-filter-content"  type="submit"> فیلتر <i class="material-icons">navigate_before</i></button>
+    </div>
+    </div>
+  
+    <!-- filtering buttons -->
+    
+    <!-- panels -->
+    <div class="row pt-3 ">
+      <div class="col-12 col-md-4 col-lg-3 ">
+        <div class="card custom-content-card  position-relative">
+          <span class="position-absolute post-type rounded">مقاله</span>
+          <span class="badge badge-danger position-absolute new-post-badge rounded">جدید</span>
+          <img src="photos/8.jpg"    class="card-img-top">
+          <div class="card-body ">
+            <a href="" class="card-title pt-1" style="height:100px">دوره آموزش php:جلسه اول </a>
+            <span class="float-left  mt-1">31 تیر 1400</span>
+          </div>
+          <div class="card-footer p-0" id="cutom-card-footer">
+            <ul class="list-inline post-meta mt-3">
+              <li class="list-inline-item">
+                <span class="text-danger"> 
+                  <i class="material-icons ml-1">content_copy</i>رایگان</span>
+               </li>
+               <li class="list-inline-item"><span class=""><i class="material-icons ml-1">comment</i> 16</span></li>
+              <li class="list-inline-item"><span class=""> <i class="material-icons ml-1">visibility</i>16</span></li>
+              <li class="list-inline-item"><span class=""> <i class="material-icons  ml-1">thumb_up</i>45</span></li>
+            </ul>
+           
+          </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="card custom-content-card  position-relative">
+            <span class="position-absolute post-type rounded">مقاله</span>
+            <span class="badge badge-danger position-absolute new-post-badge rounded">جدید</span>
+            <img src="photos/9.jpg"    class="card-img-top">
+            <div class="card-body ">
+              <a href="" class="card-title pt-1" style="height:100px">دوره آموزش php:جلسه اول </a>
+              <span class="float-left  mt-1">31 تیر 1400</span>
+            </div>
+            <div class="card-footer p-0" id="cutom-card-footer">
+              <ul class="list-inline post-meta mt-3">
+                <li class="list-inline-item">
+                  <span class="text-danger"> 
+                    <i class="material-icons ml-1">content_copy</i>رایگان</span>
+                 </li>
+                 <li class="list-inline-item"><span class=""><i class="material-icons ml-1">comment</i> 16</span></li>
+                <li class="list-inline-item"><span class=""> <i class="material-icons ml-1">visibility</i>16</span></li>
+                <li class="list-inline-item"><span class=""> <i class="material-icons  ml-1">thumb_up</i>45</span></li>
+              </ul>
+             
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card custom-content-card  position-relative">
+              <span class="position-absolute post-type rounded">مقاله</span>
+              <span class="badge badge-danger position-absolute new-post-badge rounded">جدید</span>
+              <img src="photos/10.jpg"    class="card-img-top">
+              <div class="card-body ">
+                <a href="" class="card-title pt-1" style="height:100px">دوره آموزش php:جلسه اول </a>
+                <span class="float-left  mt-1">31 تیر 1400</span>
+              </div>
+              <div class="card-footer p-0" id="cutom-card-footer">
+                <ul class="list-inline post-meta mt-3">
+                  <li class="list-inline-item">
+                    <span class="text-danger"> 
+                      <i class="material-icons ml-1">content_copy</i>رایگان</span>
+                   </li>
+                   <li class="list-inline-item"><span class=""><i class="material-icons ml-1">comment</i> 16</span></li>
+                  <li class="list-inline-item"><span class=""> <i class="material-icons ml-1">visibility</i>16</span></li>
+                  <li class="list-inline-item"><span class=""> <i class="material-icons  ml-1">thumb_up</i>45</span></li>
+                </ul>
+               
+              </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="card custom-content-card  position-relative">
+                <span class="position-absolute post-type rounded">مقاله</span>
+                <span class="badge badge-danger position-absolute new-post-badge rounded">جدید</span>
+                <img src="photos/11.jpg"    class="card-img-top">
+                <div class="card-body ">
+                  <a href="" class="card-title pt-1" style="height:100px">آ :طراحی صفحه بندی در</a>
+                  <span class="float-left  mt-1">31 تیر 1400</span>
+                </div>
+                <div class="card-footer p-0" id="cutom-card-footer">
+                  <ul class="list-inline post-meta mt-3">
+                    <li class="list-inline-item">
+                      <span class="text-danger"> 
+                        <i class="material-icons ml-1">content_copy</i>رایگان</span>
+                     </li>
+                     <li class="list-inline-item"><span class=""><i class="material-icons ml-1">comment</i> 16</span></li>
+                    <li class="list-inline-item"><span class=""> <i class="material-icons ml-1">visibility</i>16</span></li>
+                    <li class="list-inline-item"><span class=""> <i class="material-icons  ml-1">thumb_up</i>45</span></li>
+                  </ul>
+                 
+                </div>
+                </div>
+              </div>
+      </div>
+       <!-- second-row -->
+       <div class="row  pb-3 mt-2">
+        <div class="col-12 col-md-4 col-lg-3 ">
+          <div class="card custom-content-card  position-relative">
+            <span class="position-absolute post-type rounded">مقاله</span>
+            <span class="badge badge-danger position-absolute new-post-badge rounded">جدید</span>
+            <img src="photos/8.jpg"   class="card-img-top">
+            <div class="card-body ">
+              <a href="" class="card-title pt-1" style="height:100px">دوره آموزش php:جلسه اول </a>
+              <span class="float-left  mt-1">31 تیر 1400</span>
+            </div>
+            <div class="card-footer p-0" id="cutom-card-footer">
+              <ul class="list-inline post-meta mt-3">
+                <li class="list-inline-item">
+                  <span class="text-danger"> 
+                    <i class="material-icons ml-1">content_copy</i>رایگان</span>
+                 </li>
+                 <li class="list-inline-item"><span class=""><i class="material-icons ml-1">comment</i> 16</span></li>
+                <li class="list-inline-item"><span class=""> <i class="material-icons ml-1">visibility</i>16</span></li>
+                <li class="list-inline-item"><span class=""> <i class="material-icons  ml-1">thumb_up</i>45</span></li>
+              </ul>
+             
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card custom-content-card  position-relative">
+              <span class="position-absolute post-type rounded">مقاله</span>
+              <span class="badge badge-danger position-absolute new-post-badge rounded">جدید</span>
+              <img src="photos/9.jpg"    class="card-img-top">
+              <div class="card-body ">
+                <a href="" class="card-title pt-1" style="height:100px">دوره آموزش php:جلسه اول </a>
+                <span class="float-left  mt-1">31 تیر 1400</span>
+              </div>
+              <div class="card-footer p-0" id="cutom-card-footer">
+                <ul class="list-inline post-meta mt-3">
+                  <li class="list-inline-item">
+                    <span class="text-danger"> 
+                      <i class="material-icons ml-1">content_copy</i>رایگان</span>
+                   </li>
+                   <li class="list-inline-item"><span class=""><i class="material-icons ml-1">comment</i> 16</span></li>
+                  <li class="list-inline-item"><span class=""> <i class="material-icons ml-1">visibility</i>16</span></li>
+                  <li class="list-inline-item"><span class=""> <i class="material-icons  ml-1">thumb_up</i>45</span></li>
+                </ul>
+               
+              </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="card custom-content-card  position-relative">
+                <span class="position-absolute post-type rounded">مقاله</span>
+                <span class="badge badge-danger position-absolute new-post-badge rounded">جدید</span>
+                <img src="photos/10.jpg"    class="card-img-top">
+                <div class="card-body ">
+                  <a href="" class="card-title pt-1" style="height:100px">دوره آموزش php:جلسه اول </a>
+                  <span class="float-left  mt-1">31 تیر 1400</span>
+                </div>
+                <div class="card-footer p-0" id="cutom-card-footer">
+                  <ul class="list-inline post-meta mt-3">
+                    <li class="list-inline-item">
+                      <span class="text-danger"> 
+                        <i class="material-icons ml-1">content_copy</i>رایگان</span>
+                     </li>
+                     <li class="list-inline-item"><span class=""><i class="material-icons ml-1">comment</i> 16</span></li>
+                    <li class="list-inline-item"><span class=""> <i class="material-icons ml-1">visibility</i>16</span></li>
+                    <li class="list-inline-item"><span class=""> <i class="material-icons  ml-1">thumb_up</i>45</span></li>
+                  </ul>
+                 
+                </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="card custom-content-card  position-relative">
+                  <span class="position-absolute post-type rounded">مقاله</span>
+                  <span class="badge badge-danger position-absolute new-post-badge rounded">جدید</span>
+                  <img src="photos/11.jpg"   class="card-img-top">
+                  <div class="card-body ">
+                    <a href="" class="card-title pt-1" style="height:100px">دوره آموزش php:جلسه اول </a>
+                    <span class="float-left  mt-1">31 تیر 1400</span>
+                  </div>
+                  <div class="card-footer p-0" id="cutom-card-footer">
+                    <ul class="list-inline post-meta mt-3">
+                      <li class="list-inline-item">
+                        <span class="text-danger"> 
+                          <i class="material-icons ml-1">content_copy</i>رایگان</span>
+                       </li>
+                       <li class="list-inline-item"><span class=""><i class="material-icons ml-1">comment</i> 16</span></li>
+                      <li class="list-inline-item"><span class=""> <i class="material-icons ml-1">visibility</i>16</span></li>
+                      <li class="list-inline-item"><span class=""> <i class="material-icons  ml-1">thumb_up</i>45</span></li>
+                    </ul>
+                   
+                  </div>
+                  </div>
+                </div>
+        </div>
+        <div class="text-left "> <a href="#" class="btn btn-success  btn-content btn-sm m-3 ">همه مطالب آموزشی ...</a></div>
+    </div>
+    
+  </div>
+  <!-- panel section -->
+  <div class="container mt-4  p-0">
+    <div class="row ">
+      <div class="col-12 col-md-4 ">
+         <div class="panel-section mt-1 rounded shadow-sm">
+           <div class="panel-title mb-3 text-center">
+                                    پیشرفت دوره های آموزشی
+           </div>
+
+           <div class="panel-body">
+             <div class="progress-title "> فریم ورک بوت استرپ</div>
+             <div class="progress mb-2" style="height:10px;">
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:70%;"></div>
+           </div>
+
+            <div class="progress-title "> اسکریپ نویسی php</div>
+            <div class="progress  mb-2"  style="height:10px;">
+              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:65%;"> </div>
+            </div>
+
+           <div class="progress-title "> طراحی وب</div>
+           <div class="progress  mb-2"  style="height:10px;">
+               <div class="progress-bar bg-info " style="width:30%;"></div>
+           </div>
+
+          <div class="progress-title "> طراحی قالب وردپرس</div>
+           <div class="progress  mb-1"  style="height:10px;">
+             <div class="progress-bar bg-danger " style="width:60%; "> </div>
+           </div>
+          </div>
+          
+       </div>
+    </div>
+     
+<!-- commenrs of students -->
+      <div class="col-12 col-md-4">
+        <div class="panel-section mt-1 rounded ">
+          <div  class="panel-title mb-3 text-center"> نظرات دانشجویان</div>
+         
+
+          <div id="comments-slider" class="carousel slide" data-ride="carousel">
+            
+            <div class="carousel-inner rounded">
+              <div class="carousel-item  active">
+                <div class="panel-header rounded">
+                  <img src="photos/admin.png" class="rounded-circle" width="35" height="35">
+                  <span >دوره اسکریپ نویسی php</span>
+                </div>
+                <p class="user-comments text-justify">خیلی خیلی ضعیف و مبتدی
+                  اصلا شبیه کلیپ معرفی دوره نبود
+                  واقعا متاسفم که این محصول آموزشی را خریداری کردم</p>
+               
+              </div>
+              <div class="carousel-item">
+                <div class="panel-header rounded">
+                  <img src="photos/admin.png" class="rounded-circle" width="35" height="35">
+                  <span >دوره اسکریپ نویسی php</span>
+                </div>
+                <p  class="user-comments text-justify">سلام... مدت آموزش نسبت به هزینه کم بود... چطور میشه آیکن های استفاده شده در آموزش رو دانلود کرد؟ در صورت امکان فایل های استفاده شده در آموزش رو برای دانلود بزارین...ممنون</p>
+              </div>
+              <div class="carousel-item">
+                <div class="panel-header rounded">
+                  <img src="photos/admin.png" class="rounded-circle" width="35" height="35">
+                  <span >دوره اسکریپ نویسی php</span>
+                </div>
+                <p class="user-comments text-justify">
+                  سلام و وقت بخیر
+مدرس کامل کدهارو توضیح میدن روند خوبی دارن فقط سعی کنید در مورد خطاهایی که در هنگام برنامه نویسی پیش میاد بیشتر صحبت کنند.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <div class="panel-header rounded">
+                  <img src="photos/admin.png" class="rounded-circle" width="35" height="35">
+                  <span >دوره اسکریپ نویسی php</span>
+                </div>
+                <p  class="user-comments text-justify">
+
+                  با تشکر از آموزش هاتون.
+یه پیشنهادی داشتم. به نظرم خیلی پشت سر هم و بدون مکث مطالبو توضیح میدید که این از نظر من مخاطب رو خسته میکنه. بنظرم مکث کردن بین صحبت ها و تغییر ولوم صدا خیلی کمک میکنه که مطالبتون برای مخاطب جذاب تر باشه.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+         <!-- end of slider -->
+        </div>
+      </div>
+     <!-- connect with us -->
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="panel-section mt-1 rounded shadow-sm">
+          <div  class="panel-title mb-3 text-center"> تماس با ما</div>
+          <div class="panel-body">
+             <form >
+              <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                   <span class="input-group-text custom-input-group-text">نــــــام</span>
+                </div>
+                <input class="form-control custom-form-control " type="text"  placeholder="نام خود را وارد کنید">
+              </div>
+              <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                   <span class="input-group-text input-sm custom-input-group-text ">ایمیل</span>  
+                </div>
+                <input class="form-control custom-form-control  " type="text"  placeholder="ایمیل خود را وارد کنید">
+              </div>
+              <textarea class="form-control mb-1 custom-form-control" type="text" col="6" placeholder="پیام شما"></textarea>
+              <input class="btn btn-success btn-sm  btn-block " type="submit" value="ارسال پیـــــام ">
+            </form> 
+    </div>
+  </div>
+</div>
+ </div>
+ </div>
+  <!-- footer section -->
+  <div class="container-fluid  container-fluid-news mt-4  m-0" >
+    <div class="row justify-content-center">
+      <div class="col-12 col-12 col-md-6 col-lg-6 ">
+        
+        <form class="rtl p-4"   >
+          
+          <p class=" text-white text-center newsletter-title">  <i class="material-icons">notifications_active</i>
+            برای اطلاع از آخرین آموزش ها در خبرنامه عضو شوید.</p>
+          
+          <div class="input-group text-center ">
+            <input class="form-control " type="text" placeholder="ایمیل خود را وارد کنید">
+              <div class="input-group-prepend">
+                <input  type="submit" class="btn btn-warning" value="اشتراک">
+              </div>
+          </div>
+       </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid container-fluid-footer  ">
+    <div class="row ">
+      <div class="col-12 p-0">
+       
+        <div class="copy-right text-center p-3">تمام حقوق مادی و معنوی این سایت مربوط به وب سایت وب دیزاین می باشد</div>
+      </div>
+
+    </div>
+  </div>
+  <!-- <script  type="text/javascript" src="js/custom.js"></script> -->
+  <script  type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>
